@@ -1,0 +1,21 @@
+-------- install each one in a new line, not a bash one
+
+
+sudo apt update -y
+sudo apt install xfce4 xfce4-goodies
+sudo apt install tightvncserver
+export USER="codespace"
+sudo apt install dbus-x11
+
+wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo dpkg -i chrome-remote-desktop_current_amd64.deb || sudo apt install -f -y
+
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo apt update
+sudo apt install firefox-esr
+sudo apt install file-roller
+
+
+---------------------------------------------------------
+while true; do xdotool key Shift; sleep 1; done
+xset s off s noblank -dpms
